@@ -129,3 +129,27 @@ Project Structure
   - env.js
 - utils/ # Utility functions
   - errorHandler.js
+
+__________________________________________________________________________
+
+        API Versioning
+Versioning helps you evolve your API without breaking existing clients.
+
+Common approaches include:
+
+- URI Path Versioning: /api/v1/users
+- Query Parameter: /api/users?version=1
+- Custom Header: X-API-Version: 1
+- Accept Header: Accept: application/vnd.myapi.v1+json
+
+__________________________________________________________________________
+
+Request Validation
+Always validate incoming requests to ensure data integrity and security.
+
+Libraries like Joi or express-validator can help.
+
+__________________________________________________________________________
+
+Error Handling
+Implement consistent error handling to provide clear feedback to API consumers.
